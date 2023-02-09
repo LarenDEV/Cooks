@@ -1,0 +1,142 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100vh;
+	font-family: 'Inter', sans-serif;	
+
+	color: #fff;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(251, 188, 5, .7) 0%, rgba(255, 143, 63, .95) 100%), url('./../img/dish-1.png') no-repeat center;
+	background-size: cover;
+}
+
+a {
+	color: #fff;	
+}
+
+.container {
+	max-width: 1270px;
+	margin: 0 auto;	
+	padding: 0 15px;
+}
+
+/* HEADER STYLES */
+.header-content {
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	padding-top: 20px;
+}
+
+.nav-list {
+	display: flex;
+	gap: 40px;
+}
+
+.btn-login {
+	padding: 8px 25px;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	transition: border .5s, background .5s, box-shadow .5s;
+}
+
+.btn-login:hover {
+	border: 2px solid #fff0;
+	background: #F37120;
+	box-shadow: 0px 6px 30px #FBAD39;
+}
+
+
+/* MAIN STYLES */
+.main-content {
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	margin-top: 100px;
+	position: relative;
+}
+
+.main-title {
+	width: 330px;
+	font-weight: 900;
+	font-size: 60px;
+	letter-spacing: 0.015em;
+}
+
+.main-subtitle {
+	width: 160px;
+	margin-top: 15px;
+	letter-spacing: 0.015em;
+}
+
+.bottom-info {
+	position: absolute;
+	bottom: 0;
+	font-size: 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+.bottom-info strong {
+	font-size: 150%;
+	font-weight: 800;
+}
+
+.bottom-info.price {
+	text-align: left;
+}
+
+.bottom-info.preparation {
+	text-align: right;
+}
+
+.main-center {
+	transform: translateX(-95px);
+	text-align: center;
+}
+
+.dish-big {
+	border: 45px solid rgba(240, 220, 20, .4);
+	border-radius: 50%;
+}
+
+.dish-title {
+	margin: 40px 0 10px 0;	
+	font-weight: 800;
+	font-size: 24px;
+}
+
+.dish-subtitle {
+	letter-spacing: 0.015em;
+}
+
+.dish-scroll {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+
+	padding: 33px 8px;
+	box-shadow: 18px 39px 69px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 100px;
+	color: black;
+	background: #fff;
+}
+
+.dish-small {
+	margin: 0 auto;
+	width: 90px;
+}
+
+.dish-small.big {
+	width: 150px;
+}
+
+@media (max-width: 1250px) {
+	* {
+		display: none;
+	}
+}
