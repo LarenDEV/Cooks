@@ -1,2 +1,2 @@
 # Project preview
-https://github.com/LarenDEV/test/
+https://larendev.github.io/Cooks/
